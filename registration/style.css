@@ -1,0 +1,146 @@
+body{
+
+    background-color: #1f1e26 !important;
+}
+h1,p{
+    color: darkgrey !important;
+}
+.student{
+    text-align: center;
+    margin-top: 10%;
+}
+h3, a,.step-name{
+    color: aliceblue !important;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+p{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.form-floating{
+    background-color: #1f1e26 !important;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15%;
+    color: white;
+}
+.btn{
+    text-align: center !important;
+}
+.bbb{
+    text-align: center;
+}
+
+/* ............... */
+.stepper-wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #0000ff;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #0000ff;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+  .form-control{
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(31, 30, 38) !important;
+  height: 70px !important;
+  }
+  ::placeholder{
+    color: #ffffff !important;
+  }
+  .input-container {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    left: 110px;
+    margin-left: 0px;
+    background-color: #1f1e26 !important;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30%;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    background-color: #18171e;
+    color: white;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 9px;
+  }
+  .btn-back{
+  position: relative;
+  right: 120px;
+  }
+  .btn-next{
+    position: relative;
+  right: -120px;
+  }
